@@ -1,0 +1,224 @@
+# Page settings
+
+baseurl = "https://www.whitehouse.dev/"
+languageCode = "en-us"
+title = "Jesse Whitehouse Résumé"
+theme = "hugo-orbit-theme"
+#googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Hugo Responsive Resume/CV Theme for Developers"
+    author = "Pavel Kanyshev"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-4.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Jesse Whitehouse"
+        tagline = "Programmer | Consultant"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: contact@whitehouse.dev"
+        title = "contact@whitehouse.dev"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//jessewhitehouse.com"
+        title = "jessewhitehouse.com"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/flask"
+        title = "linkedin.com/in/flask"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/susodapop"
+        title = "github.com/susodapop"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/susodapop"
+        title = "@susodapop"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "B.A. Business Administration"
+        college = "Coe College"
+        dates = "Graduated 2011"
+
+        [[params.education.list]]
+        degree = "A.A. Liberal Arts"
+        college = "Kirkwood Commmunity College"
+        dates = "Graduated 2010"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Native"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Passtimes"
+
+        [[params.interests.list]]
+        interest = "Jazz Piano"
+
+        [[params.interests.list]]
+        interest = "Portrait Photography"
+
+        [[params.interests.list]]
+        interest = "Dog Walking"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Summary"
+        summary = "I write business software for small companies, from CRUD apps to data science toolchains. I was a devoted Excel junky until 2014 when I picked up Python. Since then I've concentrated on benefits analysis, SQL reporting and web apps. I'm an open source advocate, capable tech writer, and sincere customer servant. My aim is to leave the code cleaner than I found it. "
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Customer Success Manager"
+        dates = "2018 - Present"
+        company = "Redash.IO"
+        details = "I handled inbound support tickets, made educational videos, and maintained the docs for the company's SaaS offering. I'm a moderator and regular contributor to the open source discussion forum."
+
+        [[params.jobs.list]]
+        position = "Data Analyst"
+        dates = "2017 - 2019"
+        company = "Iowa Fluid Power"
+        details = "I gave management the data they needed to make business decisions. This means writing oodles of SQL reports. We made charts with Excel for awhile, then Tableau, and eventually I wrote a web application that processed and visualized the SQL results automatically. That app uses Flask (web framework), PANDAS (data toolchain) and PlotlyJS (data visualization). I was also the back-up IT guy, sometimes tech writer, and Salesforce administrator."
+
+        [[params.jobs.list]]
+        position = "Benefits Analyst"
+        dates = "2015 - 2017"
+        company = "Acumen Advisors"
+        details = "I prepared benefit and premium comparisons for our customers, which sometimes included spookily accurate cost forecasts thanks to Excel and later, Python. The sales team dreamed up the analysis workflow from scratch; then I built and automated it. I trained my replacements in the new system and wrote documentation for future reference. I still consult on this tool and perform updates as needed. "
+
+        [[params.jobs.list]]
+        position = "Testing Consultant"
+        dates = "2013 - 2015"
+        company = "Transamerica Retirement Solutions"
+        details = "Prepared statistical compliance tests and forecasts for qualified employer 401(k) and 403(b) plans. Cleaned database load files with bad foreign key references, joined non-homogenous data and summarized year-over-year changes. Communicated complex testing concepts to clients."
+
+        [[params.jobs.list]]
+        position = "Customer Service Representatative"
+        dates = "2012-2013"
+        company = "Transamerica Retirement Solutions"
+        details = "Answered customer questions about investment concepts, tax regulations, and paperwork. Guided customers through loan and withdrawal procedures. Maintained FINRA Series 6 license."
+
+    # Projects section
+    [params.projects]
+        enable = false
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
+
+        [[params.projects.list]]
+        title = "Hugrid"
+        url = "https://github.com/aerohub/hugrid"
+        tagline = "Grid theme for Hugo. It's a kind of boilerplate to perform anyone or anything quickly. Portfolio, collection, bookmarks, contacts and so on"
+
+        [[params.projects.list]]
+        title = "Simple FAQ Theme for Hugo"
+        url = "https://github.com/aerohub/hugo-faq-theme"
+        tagline = "Simple FAQ Theme for Hugo. You may use this theme for building very simple FAQs or note lists."
+
+        [[params.projects.list]]
+        title = "Hugo Identity"
+        url = "https://github.com/aerohub/hugo-identity-theme"
+        tagline = "Little profile/card-style template for Hugo."
+
+        [[params.projects.list]]
+        title = "Orbit"
+        url = "https://github.com/aerohub/hugo-orbit-theme"
+        tagline = "Hugo Resume/CV Theme for Developers."
+
+        [[params.projects.list]]
+        title = "Me"
+        url = "https://github.com/aerohub/hugo-me-theme"
+        tagline = "A simple responsive Hugo theme for personal site."
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Python & Flask"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "Excel and Data Viz"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "HTML5 & CSS"
+        level = "85%"
+                
+        [[params.skills.list]]
+        skill = "Javascript & jQuery"
+        level = "75%"
+
+        [[params.skills.list]]
+        skill = "Technical Writing"
+        level = "70%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = "Jesse Whitehouse"
